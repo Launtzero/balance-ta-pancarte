@@ -3,12 +3,507 @@
     "id": "LDx9Oqv",
     "image": "LDx9Oqv.webp",
     "texte": "Pas besoin de mec/meuf je me fais baiser par l'éducation nationale #bacnoir",
-    "tags": ["lycéens", "éducation nationale", "bac", "grève", "humour", "double sens", "#bacnoir"],
+    "tags": [
+      "lycéens",
+      "éducation nationale",
+      "bac",
+      "grève",
+      "humour",
+      "double sens",
+      "#bacnoir"
+    ],
     "ville": "Paris",
     "date": "",
     "cause": "Grève des lycéens",
     "w": 1348,
     "h": 1125,
     "alt": "Pancarte en carton tenue à bout de bras devant un arbre : « Pas besoin de mec/meuf je me fais baiser par l'éducation nationale #bacnoir »"
+  },
+  {
+    "id": "OQqX6JA-1",
+    "image": "OQqX6JA-1.webp",
+    "texte": "Marine rends l'argent volé, on aura de quoi étudier",
+    "tags": [
+      "lycéens",
+      "argent public",
+      "éducation",
+      "Marine Le Pen",
+      "humour",
+      "politique"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1128,
+    "alt": "Pancarte de manifestation : « Marine rends l'argent volé, on aura de quoi étudier »"
+  },
+  {
+    "id": "OQqX6JA-2",
+    "image": "OQqX6JA-2.webp",
+    "texte": "Vous nous la mettez à l'envers, on vous la Mai 68",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "Mai 68",
+      "humour",
+      "histoire"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1376,
+    "h": 922,
+    "alt": "Pancarte de manifestation : « Vous nous la mettez à l'envers, on vous la Mai 68 »"
+  },
+  {
+    "id": "OQqX6JA-3",
+    "image": "OQqX6JA-3.webp",
+    "texte": "Au lieu de vous préoccuper du voile !! Préoccupez-vous de nos conditions de travail !",
+    "tags": [
+      "lycéens",
+      "voile",
+      "laïcité",
+      "conditions de travail",
+      "éducation"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1131,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Au lieu de vous préoccuper du voile !! Préoccupez-vous de nos conditions de travail ! »"
+  },
+  {
+    "id": "OQqX6JA-4",
+    "image": "OQqX6JA-4.webp",
+    "texte": "Il vous a pointé du doigt, vous lui avez coupé la main",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "répression",
+      "main"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1366,
+    "h": 1156,
+    "alt": "Pancarte de manifestation : « Il vous a pointé du doigt, vous lui avez coupé la main »"
+  },
+  {
+    "id": "OQqX6JA-5",
+    "image": "OQqX6JA-5.webp",
+    "texte": "Elle se branche où la prise de conscience",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "prise de conscience",
+      "humour"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1128,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Elle se branche où la prise de conscience »"
+  },
+  {
+    "id": "OQqX6JA-6",
+    "image": "OQqX6JA-6.webp",
+    "texte": "Si vous pensez qu'on va vous laisser éborgner des gamins, vous vous foutez le doigt dans l'œil",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "LBD",
+      "jeu de mots",
+      "gamins"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1205,
+    "alt": "Pancarte de manifestation : « Si vous pensez qu'on va vous laisser éborgner des gamins, vous vous foutez le doigt dans l'œil »"
+  },
+  {
+    "id": "OQqX6JA-7",
+    "image": "OQqX6JA-7.webp",
+    "texte": "« La police est non violente » (le « non » est barré) : ça crève les yeux",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "police",
+      "jeu de mots",
+      "ironie"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1198,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « « La police est non violente » (le « non » est barré) : ça crève les yeux »"
+  },
+  {
+    "id": "OQqX6JA-8",
+    "image": "OQqX6JA-8.webp",
+    "texte": "Liberté, égalité, sans LBD",
+    "tags": [
+      "lycéens",
+      "LBD",
+      "devise",
+      "violences policières",
+      "jeu de mots"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1361,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Liberté, égalité, sans LBD »"
+  },
+  {
+    "id": "OQqX6JA-9",
+    "image": "OQqX6JA-9.webp",
+    "texte": "Qui sème le mépris récolte la colère",
+    "tags": [
+      "lycéens",
+      "mépris",
+      "colère",
+      "proverbe détourné"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1257,
+    "alt": "Pancarte de manifestation : « Qui sème le mépris récolte la colère »"
+  },
+  {
+    "id": "OQqX6JA-10",
+    "image": "OQqX6JA-10.webp",
+    "texte": "Les feux de poubelles ne font peur qu'aux ordures",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "poubelles",
+      "humour",
+      "colère"
+    ],
+    "ville": "",
+    "date": "",
+    "cause": "Lycéens",
+    "w": 1322,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Les feux de poubelles ne font peur qu'aux ordures »"
+  },
+  {
+    "id": "LDxKldy-1",
+    "image": "LDxKldy-1.webp",
+    "texte": "On coûte trop cher ? Attendez de voir combien coûte notre colère",
+    "tags": [
+      "lycéens",
+      "colère",
+      "budget",
+      "éducation",
+      "argent public"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1321,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « On coûte trop cher ? Attendez de voir combien coûte notre colère »"
+  },
+  {
+    "id": "LDxKldy-2",
+    "image": "LDxKldy-2.webp",
+    "texte": "La vérité sort de la bouche des enfants, sauf quand ils perdent leur mâchoire",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "LBD",
+      "proverbe détourné",
+      "enfants",
+      "dessin"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1144,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « La vérité sort de la bouche des enfants, sauf quand ils perdent leur mâchoire »"
+  },
+  {
+    "id": "LDxKldy-3",
+    "image": "LDxKldy-3.webp",
+    "texte": "Foutez l'argent de la BAC dans nos bac",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "bac",
+      "BAC",
+      "police",
+      "argent public"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1378,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Foutez l'argent de la BAC dans nos bac »"
+  },
+  {
+    "id": "LDxKldy-4",
+    "image": "LDxKldy-4.webp",
+    "texte": "1 prof pour 35 élèves, 5 CRS pour 1 élève",
+    "tags": [
+      "lycéens",
+      "classes surchargées",
+      "CRS",
+      "police",
+      "éducation",
+      "chiffres"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1232,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « 1 prof pour 35 élèves, 5 CRS pour 1 élève »"
+  },
+  {
+    "id": "LDxKldy-5",
+    "image": "LDxKldy-5.webp",
+    "texte": "Liberté, égalité, fraternité (×2), avec en rose, à la verticale : BLABLA",
+    "tags": [
+      "lycéens",
+      "devise",
+      "blabla",
+      "acrostiche",
+      "banderole"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1095,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Liberté, égalité, fraternité (×2), avec en rose, à la verticale : BLABLA »"
+  },
+  {
+    "id": "LDxKldy-6",
+    "image": "LDxKldy-6.webp",
+    "texte": "Moi quand j'avais leur âge, je fermais ma gueule ¿ Bah continue, connard",
+    "tags": [
+      "lycéens",
+      "génération",
+      "insolence",
+      "humour",
+      "réponse"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1371,
+    "alt": "Pancarte de manifestation : « Moi quand j'avais leur âge, je fermais ma gueule ¿ Bah continue, connard »"
+  },
+  {
+    "id": "LDxKldy-7",
+    "image": "LDxKldy-7.webp",
+    "texte": "De toute façon ils lisent pas les pancartes",
+    "tags": [
+      "lycéens",
+      "humour",
+      "autodérision",
+      "pancartes"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1065,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « De toute façon ils lisent pas les pancartes »"
+  },
+  {
+    "id": "LDxKldy-8",
+    "image": "LDxKldy-8.webp",
+    "texte": "Si je dois venir avec mon PQ c'est plus un lycée c'est un camping",
+    "tags": [
+      "lycéens",
+      "lycée",
+      "PQ",
+      "moyens",
+      "humour",
+      "dessin"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1331,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Si je dois venir avec mon PQ c'est plus un lycée c'est un camping »"
+  },
+  {
+    "id": "LDxKldy-9",
+    "image": "LDxKldy-9.webp",
+    "texte": "« Je bloque donc je suis » René Pancarte",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "Descartes",
+      "philosophie",
+      "blocus",
+      "humour"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1133,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « « Je bloque donc je suis » René Pancarte »"
+  },
+  {
+    "id": "LDxKldy-10",
+    "image": "LDxKldy-10.webp",
+    "texte": "Qui sème la misère récolte la colère",
+    "tags": [
+      "lycéens",
+      "misère",
+      "colère",
+      "proverbe détourné"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1006,
+    "alt": "Pancarte de manifestation : « Qui sème la misère récolte la colère »"
+  },
+  {
+    "id": "0V08XD6-1",
+    "image": "0V08XD6-1.webp",
+    "texte": "L'État nous met des droites, on répondra par la gauche",
+    "tags": [
+      "lycéens",
+      "jeu de mots",
+      "gauche",
+      "droite",
+      "politique",
+      "humour"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1378,
+    "alt": "Pancarte de manifestation : « L'État nous met des droites, on répondra par la gauche »"
+  },
+  {
+    "id": "0V08XD6-2",
+    "image": "0V08XD6-2.webp",
+    "texte": "Écouter c'est si compliqué ?",
+    "tags": [
+      "lycéens",
+      "écoute",
+      "dialogue",
+      "gouvernement",
+      "couleurs"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1230,
+    "h": 1014,
+    "alt": "Pancarte de manifestation : « Écouter c'est si compliqué ? »"
+  },
+  {
+    "id": "0V08XD6-3",
+    "image": "0V08XD6-3.webp",
+    "texte": "Nous sommes les pages de l'histoire que vous ne pourrez pas brûler",
+    "tags": [
+      "lycéens",
+      "histoire",
+      "livre",
+      "mémoire",
+      "dessin"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1309,
+    "alt": "Pancarte de manifestation : « Nous sommes les pages de l'histoire que vous ne pourrez pas brûler »"
+  },
+  {
+    "id": "0V08XD6-4",
+    "image": "0V08XD6-4.webp",
+    "texte": "Même nos pancartes ont + de sens que leurs promesses",
+    "tags": [
+      "lycéens",
+      "promesses",
+      "politique",
+      "humour",
+      "pancartes"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1278,
+    "alt": "Pancarte de manifestation : « Même nos pancartes ont + de sens que leurs promesses »"
+  },
+  {
+    "id": "0V08XD6-5",
+    "image": "0V08XD6-5.webp",
+    "texte": "On nous tabasse alors qu'on veut juste aller en classe",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "école",
+      "blocus"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1307,
+    "alt": "Pancarte de manifestation : « On nous tabasse alors qu'on veut juste aller en classe »"
+  },
+  {
+    "id": "0V08XD6-6",
+    "image": "0V08XD6-6.webp",
+    "texte": "Tu frappes tes enfants ? Partage ta passion, la police recrute",
+    "tags": [
+      "lycéens",
+      "violences policières",
+      "police",
+      "ironie",
+      "humour noir"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1400,
+    "h": 1106,
+    "alt": "Pancarte de manifestation : « Tu frappes tes enfants ? Partage ta passion, la police recrute »"
+  },
+  {
+    "id": "0V08XD6-7",
+    "image": "0V08XD6-7.webp",
+    "texte": "Les vrais casseurs sont en costard-matraque",
+    "tags": [
+      "lycéens",
+      "casseurs",
+      "jeu de mots",
+      "police",
+      "costard"
+    ],
+    "ville": "",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 1042,
+    "h": 1400,
+    "alt": "Pancarte de manifestation : « Les vrais casseurs sont en costard-matraque »"
   }
 ]
