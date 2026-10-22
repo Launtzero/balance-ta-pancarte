@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Balance ta pancarte</title>
+<meta name="description" content="Des idées plein les cartons, des slogans plein la rue. La collection libre et collaborative des pancartes de manif.">
+<meta property="og:title" content="Balance ta pancarte">
+<meta property="og:description" content="Des idées plein les cartons, des slogans plein la rue. La collection libre et collaborative des pancartes de manif.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='4' width='26' height='17' fill='%23000'/%3E%3Crect x='14.5' y='21' width='3' height='9' fill='%23000'/%3E%3C/svg%3E">
+<style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+/* Noir sur blanc, Helvetica Neue partout. Gros titre, barre de recherche collante, mur de photos. */
+:root{
+  --bg:#fff; --ink:#000; --muted:#555; --line:#ddd; --soft:#f2f2f2; --focus:#0050ff;
+  --f:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.hero .wrap{padding-block:48px 24px;display:grid;gap:12px}
+.hero h1{font-weight:900;font-size:clamp(2.8rem,10vw,7.5rem);line-height:.9;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.hero .sub{font-weight:700;font-size:clamp(1.15rem,2.6vw,1.6rem);line-height:1.2;letter-spacing:-.01em;margin:0}
+.hero .lead{font-weight:400;font-size:clamp(1rem,1.8vw,1.2rem);line-height:1.3;margin:-4px 0 0}
+@media (min-width:761px){.hero .sub{white-space:nowrap}}
+.hero .spacer{height:12px}
+
+.field{display:flex;align-items:center;gap:8px;height:46px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);padding:0 6px 0 12px}
+.field svg{flex:none}
+#q{flex:1;min-width:0;border:0;background:transparent;color:var(--bg);font:inherit;font-size:1.05rem;padding:11px 0;outline:none}
+#q::placeholder{color:#b8b8b8;opacity:1}
+#q,#q:focus{-webkit-appearance:none;appearance:none;border:0;border-radius:0;box-shadow:none;background:transparent}
+#q::-webkit-search-decoration,#q::-webkit-search-cancel-button,#q::-webkit-search-results-button{-webkit-appearance:none;display:none}
+.clear{border:0;background:transparent;color:#b8b8b8;font:inherit;cursor:pointer;padding:8px 10px}
+.field:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:.86rem;font-weight:700;padding:4px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.chip span{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:4px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chip[aria-pressed="true"] span{color:inherit;opacity:.7}
+button:focus-visible,a:focus-visible,.tile:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+main .wrap{padding-block:22px 40px;display:grid;gap:16px}
+.result-line{color:var(--muted);font-size:.92rem;margin:0}
+.wall{columns:4 240px;column-gap:16px}
+.tile{break-inside:avoid;margin:0 0 20px;display:block;width:100%;text-align:left;background:none;border:0;padding:0;cursor:zoom-in;color:inherit;font:inherit}
+.tile img{display:block;width:100%;height:auto;background:var(--soft)}
+.tile .txt{font-weight:700;font-size:1.02rem;line-height:1.25;margin:8px 0 2px;overflow-wrap:anywhere}
+.tile .meta{font-size:.8rem;color:var(--muted);margin:0}
+mark{background:var(--ink);color:var(--bg);padding:0 2px}
+
+.empty{border-top:2px solid var(--ink);padding-top:20px}
+.empty h2{font-weight:700;font-size:1.5rem;line-height:1.15;margin:0 0 8px;text-wrap:balance}
+.empty p{margin:0 0 6px;color:var(--muted);max-width:56ch}
+.nomatch p{margin:0}
+
+.duo .wrap{padding-block:0 28px;display:grid;grid-template-columns:repeat(2,minmax(0,425px));grid-template-rows:auto 1fr auto auto;column-gap:12px;row-gap:10px}
+.box{border:2px solid var(--ink);padding:15px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:10px;min-width:0;font-size:.88rem}
+.box .body{display:grid;align-content:start;gap:8px}
+.box.inv{background:var(--ink);color:var(--bg)}
+.box h2{font-weight:900;font-size:clamp(1.2rem,3vw,1.65rem);line-height:1;letter-spacing:-.02em;margin:0}
+.box p{margin:0;max-width:52ch}
+.box ol,.box ul{margin:0;padding-left:1.2em;display:grid;gap:4px}
+.box .small{font-size:.78rem;opacity:.75}
+.box #q{font-size:.95rem;padding:0;height:100%}
+.box .chip{font-size:.78rem;padding:3px 8px}
+.box .send{display:flex;align-items:center;justify-content:center;height:46px;background:var(--bg);color:var(--ink);font-weight:700;text-decoration:none;padding:0 14px;border:2px solid var(--bg)}
+.box .anon{font-weight:700}
+.thanks{margin:0 0 16px;max-width:calc(850px + 12px);border:2px solid var(--ink);background:var(--soft);padding:12px 15px;font-weight:700}
+.box .send:hover{background:transparent;color:var(--bg)}
+.search{display:grid;gap:10px;min-width:0}
+.lb{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.9);display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,340px);
+  padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));gap:16px}
+.lb figure{margin:0;display:grid;place-items:center;min-height:0}
+.lb figure img{max-height:100%;max-width:100%;object-fit:contain}
+.lb aside{background:var(--bg);color:var(--ink);padding:18px;overflow:auto;display:grid;align-content:start;gap:12px}
+.lb .big{font-weight:900;font-size:1.5rem;line-height:1.1;letter-spacing:-.01em;overflow-wrap:anywhere}
+.lb .label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 4px}
+.lb .tags{display:flex;flex-wrap:wrap;gap:6px}
+.lb .row{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:2px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;padding:7px 12px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;z-index:30;font-size:.9rem;font-weight:700}
+
+@media (max-width:760px){
+  .duo .wrap{grid-template-columns:minmax(0,1fr);grid-template-rows:none}
+  .box{grid-row:auto;grid-template-rows:none}
+  .lb{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .lb aside{max-height:45vh}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Balance ta pancarte</h1>
+    <p class="sub">Des idées plein les cartons, des slogans plein la rue.</p>
+    <p class="lead">La collection libre et collaborative des pancartes de manif.</p>
+    <div class="spacer" aria-hidden="true"></div>
+  </div>
+</header>
+
+<div class="wrap"><p class="thanks" id="thanks" role="status" hidden>Merci ! Ta pancarte a bien été envoyée. Elle sera ajoutée au mur après vérification.</p></div>
+
+<section class="duo">
+  <div class="wrap">
+    <div class="box inv" id="poster">
+      <h2>Je poste</h2>
+      <div class="body">
+        <ol>
+          <li>Prends ta pancarte en photo, de face et bien lisible.</li>
+          <li>Envoie-la avec la ville et la date de la manif.</li>
+          <li>Elle est compressée, retranscrite, classée par mots-clés et ajoutée au mur.</li>
+        </ol>
+        <p class="anon">Envoi anonyme : aucun nom demandé, e-mail facultatif.</p>
+      </div>
+      <a class="send" id="contact" href="https://tally.so/r/vXGJe0" target="_blank" rel="noopener">Envoyer ma pancarte →</a>
+      <p class="small">Visages floutés, localisation des photos supprimée, pas d'appel à la haine. Tout ce qui est posté est libre de réutilisation.</p>
+    </div>
+    <div class="box" id="inspire">
+      <h2>Je m'inspire</h2>
+      <p class="body">Cherche par mots-clés.<br>Pioche les idées qui te plaisent.<br>Trouve ton slogan.<br>Fais ta pancarte.<br>Descends dans la rue.</p>
+      <div role="search">
+        <label class="field" for="q">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="retraites, climat, jeu de mots, humour…" autocomplete="off" aria-label="Rechercher une pancarte">
+          <button class="clear" id="clear" type="button" hidden>Effacer</button>
+        </label>
+      </div>
+      <div class="chips" id="chips" aria-label="Mots-clés"></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <p class="result-line" id="resultLine" aria-live="polite"></p>
+    <div class="wall" id="wall"></div>
+    <section class="empty" id="empty" hidden>
+      <h2>Le mur attend ses premières pancartes</h2>
+      <p>Les photos apparaîtront ici dès qu'elles seront envoyées, chacune avec le texte de la pancarte et ses mots-clés.</p>
+      <p>La recherche fonctionnera sur le texte, les thèmes, la ville et le style.</p>
+    </section>
+    <section class="nomatch" id="nomatch" hidden><p>Aucune pancarte ne correspond. Essaie un mot plus court ou un autre thème.</p></section>
+  </div>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Pancarte">
+  <figure><img id="lbImg" alt=""></figure>
+  <aside>
+    <div class="row" style="justify-content:space-between">
+      <button class="btn" id="prev" type="button">← Préc.</button>
+      <button class="btn" id="next" type="button">Suiv. →</button>
+      <button class="btn primary" id="close" type="button">Fermer</button>
+    </div>
+    <div><p class="label">Texte de la pancarte</p><div class="big" id="lbTxt"></div></div>
+    <button class="btn" id="copy" type="button">Copier le texte</button>
+    <div><p class="label">Mots-clés</p><div class="tags" id="lbTags"></div></div>
+    <div><p class="label">Manif</p><div id="lbMeta"></div></div>
+  </aside>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(async function(){
+  // Données du mur : pancartes.json = [{id, image, texte, tags[], ville, date (AAAA-MM-JJ), cause, w, h, alt}]
+  let raw = [];
+  try { const r = await fetch('pancartes.json', {cache:'no-cache'}); if (r.ok) raw = await r.json(); } catch(e) {}
+  const data = (Array.isArray(raw) ? raw : [])
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.id||'').localeCompare(a.id||''));
+  const $ = id => document.getElementById(id);
+  const norm = s => (s||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+  const esc = s => (s||'').toString().replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmtDate = d => { if(!d) return ''; const t=new Date(d+'T12:00:00'); return isNaN(t)?d:t.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'}); };
+  data.forEach(p => { p._hay = norm([p.texte,(p.tags||[]).join(' '),p.ville,p.cause,p.alt].join(' ')); });
+
+  // Stats
+  const villes = new Set(data.map(p=>p.ville).filter(Boolean));
+  const allTags = {};
+  data.forEach(p=>(p.tags||[]).forEach(t=>{allTags[t]=(allTags[t]||0)+1;}));
+
+  // Chips
+  let active = new Set();
+  const tagList = Object.entries(allTags).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'fr')).slice(0,40);
+  $('chips').hidden = !tagList.length;
+  $('chips').innerHTML = tagList.map(([t,n])=>`<button type="button" class="chip" aria-pressed="false" data-tag="${esc(t)}">${esc(t)}<span>${n}</span></button>`).join('');
+  $('chips').addEventListener('click',e=>{
+    const b=e.target.closest('.chip'); if(!b) return;
+    const t=b.dataset.tag; active.has(t)?active.delete(t):active.add(t);
+    b.setAttribute('aria-pressed',active.has(t)); render();
+  });
+
+  const q=$('q');
+  let shown=[];
+  function highlight(text,terms){
+    let out=esc(text); if(!terms.length) return out;
+    const n=norm(text); const marks=[];
+    terms.forEach(t=>{let i=n.indexOf(t);while(t&&i>-1){marks.push([i,i+t.length]);i=n.indexOf(t,i+t.length);}});
+    if(!marks.length) return out;
+    marks.sort((a,b)=>a[0]-b[0]); let res='',pos=0;
+    for(const [s,e] of marks){ if(s<pos) continue; res+=esc(text.slice(pos,s))+'<mark>'+esc(text.slice(s,e))+'</mark>'; pos=e; }
+    return res+esc(text.slice(pos));
+  }
+  function render(){
+    const terms=norm(q.value).split(/\s+/).filter(Boolean);
+    $('clear').hidden=!q.value;
+    shown=data.filter(p=>terms.every(t=>p._hay.includes(t)) && [...active].every(t=>(p.tags||[]).includes(t)));
+    $('empty').hidden = data.length>0;
+    $('nomatch').hidden = !data.length || shown.length>0;
+    $('resultLine').hidden = !data.length;
+    $('resultLine').textContent = (terms.length||active.size) ? `${shown.length} pancarte${shown.length>1?'s':''} sur ${data.length}` : `Les plus récentes d'abord`;
+    $('wall').innerHTML = shown.map((p,i)=>`
+      <button type="button" class="tile" data-i="${i}">
+        <img src="images/${esc(p.image)}" alt="${esc(p.alt||p.texte)}" loading="lazy" ${p.w&&p.h?`width="${+p.w}" height="${+p.h}"`:''}>
+        <p class="txt">${highlight(p.texte||'',terms)}</p>
+        <p class="meta">${esc([p.ville,fmtDate(p.date)].filter(Boolean).join(' · '))}</p>
+      </button>`).join('');
+  }
+  q.addEventListener('input',render);
+  $('clear').addEventListener('click',()=>{q.value='';q.focus();render();});
+  try{ const s=localStorage.getItem('btp-q'); if(s) q.value=s; }catch(e){}
+  q.addEventListener('change',()=>{try{localStorage.setItem('btp-q',q.value);}catch(e){}});
+
+  // Lightbox
+  let cur=-1, lastFocus=null;
+  function open(i){
+    cur=(i+shown.length)%shown.length; const p=shown[cur];
+    $('lbImg').src='images/'+p.image; $('lbImg').alt=p.alt||p.texte||'';
+    $('lbTxt').textContent=p.texte||'';
+    $('lbTags').innerHTML=(p.tags||[]).map(t=>`<button type="button" class="chip" data-go="${esc(t)}">${esc(t)}</button>`).join('');
+    $('lbMeta').textContent=[p.cause,p.ville,fmtDate(p.date)].filter(Boolean).join(' · ')||'Non précisé';
+    $('prev').hidden=$('next').hidden=shown.length<2;
+    if($('lb').hidden){ lastFocus=document.activeElement; $('lb').hidden=false; $('close').focus(); }
+  }
+  function close(){ $('lb').hidden=true; cur=-1; lastFocus&&lastFocus.focus(); }
+  $('wall').addEventListener('click',e=>{const t=e.target.closest('.tile'); if(t) open(+t.dataset.i);});
+  $('close').addEventListener('click',close);
+  $('prev').addEventListener('click',()=>open(cur-1));
+  $('next').addEventListener('click',()=>open(cur+1));
+  $('lb').addEventListener('click',e=>{
+    if(e.target===$('lb')||e.target.tagName==='FIGURE') close();
+    const g=e.target.closest('[data-go]'); if(g){ close(); q.value=g.dataset.go; render(); q.scrollIntoView({block:'nearest'}); }
+  });
+  document.addEventListener('keydown',e=>{
+    if($('lb').hidden) return;
+    if(e.key==='Escape') close(); else if(e.key==='ArrowLeft') open(cur-1); else if(e.key==='ArrowRight') open(cur+1);
+  });
+  function toast(m){const t=$('toast');t.textContent=m;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>t.hidden=true,1800);}
+  $('copy').addEventListener('click',()=>{
+    const txt=$('lbTxt').textContent;
+    const fb=()=>{const r=document.createRange();r.selectNodeContents($('lbTxt'));const s=getSelection();s.removeAllRanges();s.addRange(r);toast('Texte sélectionné');};
+    try{ navigator.clipboard.writeText(txt).then(()=>toast('Texte copié'),fb); }catch(e){ fb(); }
+  });
+
+  if (location.hash === '#merci') { $('thanks').hidden = false; }
+  render();
+})();
+</script>
+</body>
+</html>
