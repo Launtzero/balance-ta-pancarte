@@ -126,7 +126,7 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
         <p class="anon">Envoi anonyme : aucun nom demandé, e-mail facultatif.</p>
       </div>
       <a class="send" id="contact" href="https://tally.so/r/vXGJe0">Envoyer ma pancarte →</a>
-      <p class="small">Visages floutés, localisation des photos supprimée, pas d'appel à la haine. Tout ce qui est posté est libre de réutilisation.</p>
+      <p class="small">Visages floutés, localisation des photos supprimée, pas d'appel à la haine. Les slogans sont libres de réutilisation ; les photos restent à leurs auteurs.</p>
     </div>
     <div class="box" id="inspire">
       <h2>Je m'inspire</h2>
@@ -168,6 +168,7 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
     <button class="btn" id="copy" type="button">Copier le texte</button>
     <div><p class="label">Mots-clés</p><div class="tags" id="lbTags"></div></div>
     <div><p class="label">Manif</p><div id="lbMeta"></div></div>
+    <div><p class="label">Photo</p><div id="lbCredit"></div></div>
   </aside>
 </div>
 <div class="toast" id="toast" hidden></div>
@@ -240,6 +241,8 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
     $('lbTxt').textContent=p.texte||'';
     $('lbTags').innerHTML=(p.tags||[]).map(t=>`<button type="button" class="chip" data-go="${esc(t)}">${esc(t)}</button>`).join('');
     $('lbMeta').textContent=[p.cause,p.ville,fmtDate(p.date)].filter(Boolean).join(' · ')||'Non précisé';
+    $('lbCredit').textContent = p.origine==='auteur' ? 'Prise par la personne qui l’a envoyée · CC BY-SA'
+      : 'Trouvée en ligne · droits réservés à son auteur' + (p.source ? ' · source : ' + p.source : '');
     $('prev').hidden=$('next').hidden=shown.length<2;
     if($('lb').hidden){ lastFocus=document.activeElement; $('lb').hidden=false; $('close').focus(); }
   }
