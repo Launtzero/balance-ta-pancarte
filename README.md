@@ -1,4 +1,6 @@
-# Balance ta pancarte
+# Super Pancarte
+
+Site : https://launtzero.github.io/superpancarte/
 
 Des idées plein les cartons, des slogans plein la rue.
 La collection libre et collaborative des pancartes de manif.
@@ -19,5 +21,5 @@ Les photos arrivent d'abord dans un dépôt privé où elles sont vérifiées (v
 ## Licence
 
 - **Les slogans** sont libres : recopie-les, détourne-les, améliore-les.
-- **Les photos prises par les personnes qui les envoient** sont publiées sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) : réutilisation libre en citant « Balance ta pancarte » et en partageant de la même façon.
+- **Les photos prises par les personnes qui les envoient** sont publiées sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) : réutilisation libre en citant « Super Pancarte » et en partageant de la même façon.
 - **Les photos trouvées en ligne** restent la propriété de leurs auteurs (droits réservés). La source est indiquée quand elle est connue. Si tu es l'auteur d'une photo et souhaites la faire retirer ou créditer, ouvre une « issue » sur ce dépôt.
