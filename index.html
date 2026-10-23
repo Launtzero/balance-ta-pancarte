@@ -43,8 +43,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;l
 #q::-webkit-search-decoration,#q::-webkit-search-cancel-button,#q::-webkit-search-results-button{-webkit-appearance:none;display:none}
 .clear{border:0;background:transparent;color:#b8b8b8;font:inherit;cursor:pointer;padding:8px 10px}
 .field:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-.chips{display:flex;flex-wrap:wrap;align-content:flex-start;gap:4px;min-width:0}
-.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:.72rem;font-weight:700;line-height:1.2;padding:3px 7px;border-radius:0;cursor:pointer;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;align-content:flex-start;gap:6px;min-width:0}
+.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:1.08rem;font-weight:700;line-height:1.2;padding:5px 11px;border-radius:0;cursor:pointer;white-space:nowrap}
 .chip:hover{background:var(--soft)}
 .chip span{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:4px}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
@@ -206,7 +206,8 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
   function render(){
     const terms=norm(q.value).split(/\s+/).filter(Boolean);
     $('clear').hidden=!q.value;
-    shown=data.filter(p=>terms.every(t=>p._hay.includes(t)) && (!active.size || (p.tags||[]).some(t=>active.has(t))));
+    shown = terms.length ? data.filter(p=>terms.every(t=>p._hay.includes(t)))
+          : data.filter(p=>!active.size || (p.tags||[]).some(t=>active.has(t)));
     $('empty').hidden = data.length>0;
     $('nomatch').hidden = !data.length || shown.length>0;
     $('resultLine').hidden = !data.length || !(terms.length||active.size);
@@ -218,7 +219,11 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
         ${p.date?`<p class="meta">${esc(fmtDate(p.date))}</p>`:''}
       </button>`).join('');
   }
-  q.addEventListener('input',render);
+  // Recherche et mots-clés sont indépendants : taper dans la barre désélectionne les mots-clés.
+  q.addEventListener('input',()=>{
+    if(q.value && active.size){ active.clear(); $('chips').querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed','false')); }
+    render();
+  });
   $('clear').addEventListener('click',()=>{q.value='';q.focus();render();});
   try{ const s=localStorage.getItem('btp-q'); if(s) q.value=s; }catch(e){}
   q.addEventListener('change',()=>{try{localStorage.setItem('btp-q',q.value);}catch(e){}});
