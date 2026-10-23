@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Balance ta pancarte</title>
+<title>Super Pancarte</title>
 <meta name="description" content="Des idées plein les cartons, des slogans plein la rue. La collection libre et collaborative des pancartes de manif.">
-<meta property="og:title" content="Balance ta pancarte">
+<meta property="og:title" content="Super Pancarte">
 <meta property="og:description" content="Des idées plein les cartons, des slogans plein la rue. La collection libre et collaborative des pancartes de manif.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='4' width='26' height='17' fill='%23000'/%3E%3Crect x='14.5' y='21' width='3' height='9' fill='%23000'/%3E%3C/svg%3E">
 <style>
@@ -24,18 +24,13 @@ img{max-width:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.45}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 
-.hero .wrap{padding-block:48px 24px;display:grid;gap:12px}
-.hero h1{font-weight:900;font-size:clamp(2.8rem,10vw,7.5rem);line-height:.9;letter-spacing:-.035em;margin:0;text-wrap:balance}
-.hero .sub{font-weight:700;font-size:clamp(1.15rem,2.6vw,1.6rem);line-height:1.2;letter-spacing:-.01em;margin:0}
-.hero .lead{font-weight:400;font-size:clamp(1rem,1.8vw,1.2rem);line-height:1.3;margin:-4px 0 0}
-@media (min-width:761px){
-  .hero h1{font-size:clamp(2.24rem,8vw,6rem)}
-  .hero .sub{white-space:nowrap;font-size:clamp(.92rem,2.08vw,1.28rem)}
-  .hero .lead{font-size:clamp(.8rem,1.44vw,.96rem)}
-}
-.hero .spacer{height:12px}
+/* Bandeau du haut : le logo Super Pancarte (sous-titre intégré à l'image), en grand, presque toute la largeur. */
+.hero{margin-bottom:8px}
+.hero .wrap{padding-block:16px 12px}
+.hero h1{margin:0;line-height:0}
+.hero h1 img{display:block;width:100%;max-width:min(100%,118vh);height:auto}
 
-.field{display:flex;align-items:center;gap:8px;height:46px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);padding:0 6px 0 12px}
+.field{display:flex;align-items:center;gap:8px;height:46px;border-radius:12px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);padding:0 6px 0 12px}
 .field svg{flex:none}
 #q{flex:1;min-width:0;border:0;background:transparent;color:var(--bg);font:inherit;font-size:1.05rem;padding:11px 0;outline:none}
 #q::placeholder{color:#b8b8b8;opacity:1}
@@ -44,21 +39,22 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;l
 .clear{border:0;background:transparent;color:#b8b8b8;font:inherit;cursor:pointer;padding:8px 10px}
 .field:focus-within{outline:3px solid var(--focus);outline-offset:2px}
 .chips{display:flex;flex-wrap:wrap;align-content:flex-start;gap:6px;min-width:0}
-.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:1.08rem;font-weight:700;line-height:1.2;padding:5px 11px;border-radius:0;cursor:pointer;white-space:nowrap}
+.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:1.08rem;font-weight:700;line-height:1.2;padding:5px 13px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .chip:hover{background:var(--soft)}
 .chip span{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:4px}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .chip[aria-pressed="true"] span{color:inherit;opacity:.7}
-button:focus-visible,a:focus-visible,.tile:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+button:focus-visible,a:focus-visible,.tile:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:12px}
+.chip:focus-visible,.btn:focus-visible,.lb .bar button:focus-visible{border-radius:999px}
 
 main .wrap{padding-block:22px 40px;display:grid;gap:16px}
 .result-line{color:var(--muted);font-size:.92rem;margin:0}
 .wall{columns:4 240px;column-gap:16px}
 .tile{break-inside:avoid;margin:0 0 20px;display:block;width:100%;text-align:left;background:none;border:0;padding:0;cursor:zoom-in;color:inherit;font:inherit}
-.tile img{display:block;width:100%;height:auto;background:var(--soft)}
+.tile img{display:block;width:100%;height:auto;background:var(--soft);border-radius:12px}
 .tile .txt{font-weight:700;font-size:.84rem;line-height:1.25;margin:3px 0 1px;overflow-wrap:anywhere}
 .tile .meta{font-size:.72rem;color:var(--muted);margin:0}
-mark{background:var(--ink);color:var(--bg);padding:0 2px}
+mark{background:var(--ink);color:var(--bg);padding:0 3px;border-radius:4px}
 
 .empty{border-top:2px solid var(--ink);padding-top:20px}
 .empty h2{font-weight:700;font-size:1.5rem;line-height:1.15;margin:0 0 8px;text-wrap:balance}
@@ -66,7 +62,7 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
 .nomatch p{margin:0}
 
 .duo .wrap{padding-block:0 28px;display:grid;grid-template-columns:repeat(2,minmax(0,425px)) minmax(0,1fr);grid-template-rows:auto 1fr auto auto;column-gap:12px;row-gap:10px}
-.box{border:2px solid var(--ink);padding:15px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:10px;min-width:0;font-size:.88rem}
+.box{border:2px solid var(--ink);border-radius:18px;padding:15px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:10px;min-width:0;font-size:.88rem}
 .box .body{display:grid;align-content:start;gap:8px}
 .box.inv{background:var(--ink);color:var(--bg)}
 .box h2{font-weight:900;font-size:clamp(1.2rem,3vw,1.65rem);line-height:1;letter-spacing:-.02em;margin:0}
@@ -75,21 +71,21 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
 .box .small{font-size:.78rem;opacity:.75}
 .box #q{font-size:.95rem;padding:0;height:100%}
 .duo .chips{grid-column:3;grid-row:1 / span 4;contain:size;overflow:visible}
-.box .send{display:flex;align-items:center;justify-content:center;height:46px;background:var(--bg);color:var(--ink);font-weight:700;text-decoration:none;padding:0 14px;border:2px solid var(--bg)}
+.box .send{display:flex;align-items:center;justify-content:center;height:46px;background:var(--bg);color:var(--ink);font-weight:700;text-decoration:none;padding:0 14px;border:2px solid var(--bg);border-radius:12px}
 .box .anon{font-weight:700}
-.thanks{margin:0 0 16px;max-width:calc(850px + 12px);border:2px solid var(--ink);background:var(--soft);padding:12px 15px;font-weight:700}
+.thanks{margin:0 0 16px;max-width:calc(850px + 12px);border:2px solid var(--ink);background:var(--soft);padding:12px 15px;font-weight:700;border-radius:14px}
 .box .send:hover{background:transparent;color:var(--bg)}
 .search{display:grid;gap:10px;min-width:0}
 .lb{position:fixed;inset:0;z-index:20;background:#000;display:flex;flex-direction:column;
   padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
 .lb .bar{flex:none;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px max(12px,env(safe-area-inset-left,0px))}
 .lb .bar .nav{display:flex;gap:8px}
-.lb .bar button{border:1px solid #fff;background:#000;color:#fff;font:inherit;font-weight:700;font-size:.85rem;padding:6px 12px;cursor:pointer}
+.lb .bar button{border:1px solid #fff;background:#000;color:#fff;font:inherit;font-weight:700;font-size:.85rem;padding:6px 14px;cursor:pointer;border-radius:999px}
 .lb figure{flex:1;min-height:0;margin:0;padding:0 12px 12px;display:flex;align-items:center;justify-content:center}
-.lb figure img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
-.btn{border:2px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;padding:7px 12px;cursor:pointer}
+.lb figure img{display:block;border-radius:12px;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.btn{border:2px solid var(--ink);border-radius:999px;background:var(--bg);color:var(--ink);font:inherit;font-weight:700;padding:7px 12px;cursor:pointer}
 .btn.primary{background:var(--ink);color:var(--bg)}
-.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;z-index:30;font-size:.9rem;font-weight:700}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;z-index:30;font-size:.9rem;font-weight:700;border-radius:999px}
 
 @media (max-width:760px){
   .duo .wrap{grid-template-columns:minmax(0,1fr);grid-template-rows:none}
@@ -102,10 +98,7 @@ mark{background:var(--ink);color:var(--bg);padding:0 2px}
 
 <header class="hero">
   <div class="wrap">
-    <h1>Balance ta pancarte</h1>
-    <p class="sub">Des idées plein les cartons, des slogans plein la rue.</p>
-    <p class="lead">La collection libre et collaborative des pancartes de manif.</p>
-    <div class="spacer" aria-hidden="true"></div>
+    <h1><img src="images/super-pancarte.webp" width="1600" height="984" alt="Super Pancarte — Des idées plein les cartons, des slogans plein la rue"></h1>
   </div>
 </header>
 
