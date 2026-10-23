@@ -581,5 +581,44 @@
     "origine": "auteur",
     "source": "",
     "envoi": "2026-10-23T13:42:57Z"
+  },
+  {
+    "id": "9N0l7jE",
+    "image": "9N0l7jE.webp",
+    "texte": "Moi, j'adore le service public. Dans 2 ou 3 ans il n'y en aura plus",
+    "tags": [
+      "service public",
+      "politique",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-17",
+    "cause": "Service public",
+    "w": 787,
+    "h": 1400,
+    "alt": "Pancarte en carton écrite en bleu et noir, brandie dans la foule sur le Vieux-Port : « Moi, j'adore le service public. Dans 2 ou 3 ans il n'y en aura plus »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-23T16:28:05Z"
+  },
+  {
+    "id": "J1j0zeR",
+    "image": "J1j0zeR.webp",
+    "texte": "La vérité sort de la bouche des enfants donc vous tirez dedans",
+    "tags": [
+      "lycéens",
+      "police",
+      "détournement",
+      "colère"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-17",
+    "cause": "Lycéens",
+    "w": 787,
+    "h": 1400,
+    "alt": "Pancarte en carton écrite au feutre noir, tenue à bout de bras dans une rue de Marseille : « La vérité sort de la bouche des enfants donc vous tirez dedans »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-23T16:30:27Z"
   }
 ]
