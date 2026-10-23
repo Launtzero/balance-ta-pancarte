@@ -25,11 +25,11 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;l
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 
 /* Bandeau du haut : le logo Super Pancarte (sous-titre intégré à l'image), en grand, presque toute la largeur. */
-.hero{margin-bottom:8px}
+.hero{margin-bottom:24px}
 .hero .wrap{padding-block:16px 12px}
 .hero h1{margin:0;line-height:0}
 .hero h1 img{display:block;width:100%;max-width:min(100%,118vh);height:auto;margin-inline:auto}
-@media (min-width:761px){ .hero h1 img{width:50%;max-width:59vh} }
+@media (min-width:761px){ .hero h1 img{width:50%;max-width:59vh;margin-inline:0} }
 
 .field{display:flex;align-items:center;gap:8px;height:46px;border-radius:12px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);padding:0 6px 0 12px}
 .field svg{flex:none}
@@ -39,8 +39,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;l
 #q::-webkit-search-decoration,#q::-webkit-search-cancel-button,#q::-webkit-search-results-button{-webkit-appearance:none;display:none}
 .clear{border:0;background:transparent;color:#b8b8b8;font:inherit;cursor:pointer;padding:8px 10px}
 .field:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-.chips{display:flex;flex-wrap:wrap;align-content:flex-start;gap:4px;min-width:0}
-.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:.76rem;font-weight:700;line-height:1.2;padding:3px 9px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;align-content:flex-start;gap:5px;min-width:0}
+.chip{flex:none;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit;font-size:.87rem;font-weight:700;line-height:1.2;padding:4px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .chip:hover{background:var(--soft)}
 .chip span{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:4px}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
