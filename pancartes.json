@@ -543,5 +543,43 @@
     "origine": "en ligne",
     "source": "",
     "envoi": "2026-10-22T21:22:56Z"
+  },
+  {
+    "id": "xVbpz9k",
+    "image": "xVbpz9k.webp",
+    "texte": "Pancarte aussi grosse que le budget de la santé",
+    "tags": [
+      "santé",
+      "argent",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-17",
+    "cause": "Budget santé",
+    "w": 1076,
+    "h": 1208,
+    "alt": "Petite pancarte en carton tenue à bout de bras au-dessus de la foule : « Pancarte aussi grosse que le budget de la santé »",
+    "origine": "en ligne",
+    "source": "",
+    "envoi": "2026-10-23T10:03:14Z"
+  },
+  {
+    "id": "o9NB6NO",
+    "image": "o9NB6NO.webp",
+    "texte": "Faut-il changer : A/ les joueurs ? B/ les règles du jeu ! Démocratie directe (réponse : B)",
+    "tags": [
+      "démocratie",
+      "politique",
+      "humour"
+    ],
+    "ville": "Paris",
+    "date": "2026-10-23",
+    "cause": "Démocratie",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte sur un sac en papier kraft, en forme de quiz : « Faut-il changer : A/ les joueurs ? B/ les règles du jeu ! Démocratie directe (réponse : B) »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-23T13:42:57Z"
   }
 ]
