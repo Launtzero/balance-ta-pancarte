@@ -158,11 +158,13 @@ mark{background:var(--ink);color:var(--bg);padding:0 3px;border-radius:4px}
 
 <script>
 (async function(){
-  // Données du mur : pancartes.json = [{id, image, texte, tags[], ville, date (AAAA-MM-JJ), cause, w, h, alt}]
+  // Données du mur : pancartes.json = [{id, image, texte, tags[], ville, date (AAAA-MM-JJ), cause, w, h, alt, envoi (date-heure de l'envoi)}]
   let raw = [];
   try { const r = await fetch('pancartes.json', {cache:'no-cache'}); if (r.ok) raw = await r.json(); } catch(e) {}
   const data = (Array.isArray(raw) ? raw : [])
-    .sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.id||'').localeCompare(a.id||''));
+    // Dernières pancartes envoyées en premier (heure d'envoi), puis dans l'ordre des photos d'un même envoi.
+    .map((p,i)=>(p._i=i,p))
+    .sort((a,b)=>(b.envoi||'').localeCompare(a.envoi||'') || a._i-b._i);
   const $ = id => document.getElementById(id);
   const norm = s => (s||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
   const esc = s => (s||'').toString().replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
