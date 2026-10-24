@@ -639,5 +639,141 @@
     "origine": "auteur",
     "source": "",
     "envoi": "2026-10-24T09:18:49Z"
+  },
+  {
+    "id": "7X09AD9",
+    "image": "7X09AD9.webp",
+    "texte": "Macron se délecte du sang de nos enfants",
+    "tags": [
+      "lycée",
+      "politique",
+      "dessin",
+      "colère"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Lycée, armée, police",
+    "w": 1050,
+    "h": 1400,
+    "alt": "Pancarte en carton dessinée, Macron en vampire aux crocs ensanglantés : « Macron se délecte du sang de nos enfants »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:47:04Z"
+  },
+  {
+    "id": "rD9rXXR-1",
+    "image": "rD9rXXR-1.webp",
+    "texte": "Bismillah c'est les ténèbres !!! Nuñez s'infiltre au lycée",
+    "tags": [
+      "lycée",
+      "politique",
+      "dessin",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1400,
+    "h": 1038,
+    "alt": "Pancarte en carton avec une caricature de Laurent Nuñez sortant d'un bol : « Bismillah c'est les ténèbres !!! Nuñez s'infiltre au lycée »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
+  },
+  {
+    "id": "rD9rXXR-2",
+    "image": "rD9rXXR-2.webp",
+    "texte": "Recyclez vos déchets, n'en faites pas des ministres",
+    "tags": [
+      "lycée",
+      "politique",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1400,
+    "h": 1400,
+    "alt": "Pancarte rouge et noire en forme de sac poubelle avec les visages de deux ministres : « Recyclez vos déchets, n'en faites pas des ministres »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
+  },
+  {
+    "id": "rD9rXXR-3",
+    "image": "rD9rXXR-3.webp",
+    "texte": "J'ai pas choisi d'en-saigner",
+    "tags": [
+      "lycée",
+      "éducation",
+      "jeu de mots"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1400,
+    "h": 1400,
+    "alt": "Ardoise blanche brandie dans le cortège : « J'ai pas choisi d'en-saigner »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
+  },
+  {
+    "id": "rD9rXXR-4",
+    "image": "rD9rXXR-4.webp",
+    "texte": "Les feux dans les poubelles, ça ne fait peur qu'aux ordures",
+    "tags": [
+      "lycée",
+      "colère",
+      "jeu de mots"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1400,
+    "h": 967,
+    "alt": "Pancarte en carton noir écrite à la craie : « Les feux dans les poubelles, ça ne fait peur qu'aux ordures »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
+  },
+  {
+    "id": "rD9rXXR-5",
+    "image": "rD9rXXR-5.webp",
+    "texte": "J'aime pas Trotro la police / Qui sème la hess récolte le zbeul",
+    "tags": [
+      "lycée",
+      "police",
+      "dessin",
+      "détournement"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1400,
+    "h": 980,
+    "alt": "Deux affiches collées sur un muret, un âne et un CRS matraque levée : « J'aime pas Trotro la police » et « Qui sème la hess récolte le zbeul »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
+  },
+  {
+    "id": "rD9rXXR-6",
+    "image": "rD9rXXR-6.webp",
+    "texte": "Recyclez vos déchets, n'en faites pas des ministres",
+    "tags": [
+      "lycée",
+      "politique",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-13",
+    "cause": "Lycée, police, social",
+    "w": 1117,
+    "h": 1400,
+    "alt": "Pancarte rouge et noire en forme de sac poubelle avec les visages de deux ministres : « Recyclez vos déchets, n'en faites pas des ministres »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T09:59:52Z"
   }
 ]
