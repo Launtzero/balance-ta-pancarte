@@ -794,5 +794,143 @@
     "origine": "auteur",
     "source": "",
     "envoi": "2026-10-24T12:25:49Z"
+  },
+  {
+    "id": "7X04WEA",
+    "image": "7X04WEA.webp",
+    "texte": "La voilà ta République en marche connard",
+    "tags": [
+      "droit à manifester",
+      "politique",
+      "jeu de mots",
+      "colère"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Droit à manifester",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte en carton peinte en bleu et rouge : « La voilà ta République en marche connard »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T14:22:49Z"
+  },
+  {
+    "id": "8NDjQWk",
+    "image": "8NDjQWk.webp",
+    "texte": "Macron tu déçois plus que l'OM",
+    "tags": [
+      "démocratie",
+      "politique",
+      "humour",
+      "dessin"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Démocratie",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte en carton bleu ciel et blanc avec le logo de l'OM : « Macron tu déçois plus que l'OM »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T14:19:12Z"
+  },
+  {
+    "id": "aOJZ65y",
+    "image": "aOJZ65y.webp",
+    "texte": "+ de master − de poulet",
+    "tags": [
+      "éducation publique",
+      "éducation",
+      "police",
+      "jeu de mots"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Éducation publique",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte en carton blanc et rouge : « + de master − de poulet »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T14:21:07Z"
+  },
+  {
+    "id": "gbPW5pl",
+    "image": "gbPW5pl.webp",
+    "texte": "J'ai traversé la rue, y'avait juste des CRS",
+    "tags": [
+      "chômage",
+      "police",
+      "détournement",
+      "humour"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Chômage",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte en carton posée au pied d'un arbre : « J'ai traversé la rue, y'avait juste des CRS »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T14:27:02Z"
+  },
+  {
+    "id": "je4GPkY-1",
+    "image": "je4GPkY-1.webp",
+    "texte": "La Macro(tte)nie la démocratie",
+    "tags": [
+      "démocratie",
+      "politique",
+      "jeu de mots",
+      "dessin"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Démocratie",
+    "w": 1050,
+    "h": 1400,
+    "alt": "Pancarte en carton décorée de petits cacas et d'étoiles : « La Macro(tte)nie la démocratie »",
+    "origine": "en ligne",
+    "source": "",
+    "envoi": "2026-10-24T14:14:53Z"
+  },
+  {
+    "id": "je4GPkY-2",
+    "image": "je4GPkY-2.webp",
+    "texte": "L'État nous pisse dessus et les médias disent « il pleut »",
+    "tags": [
+      "démocratie",
+      "politique",
+      "détournement",
+      "colère"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Démocratie",
+    "w": 1050,
+    "h": 1400,
+    "alt": "Pancarte en carton avec gouttes de pluie dessinées : « L'État nous pisse dessus et les médias disent “il pleut” »",
+    "origine": "en ligne",
+    "source": "",
+    "envoi": "2026-10-24T14:14:53Z"
+  },
+  {
+    "id": "o9NlMXe",
+    "image": "o9NlMXe.webp",
+    "texte": "La RTM rend les vélos",
+    "tags": [
+      "droit à la mobilité",
+      "dessin"
+    ],
+    "ville": "Marseille",
+    "date": "2026-10-24",
+    "cause": "Droit à la mobilité, service public",
+    "w": 1400,
+    "h": 1050,
+    "alt": "Pancarte en carton avec un vélo dessiné et un ticket RTM collé : « La RTM rend les vélos »",
+    "origine": "auteur",
+    "source": "",
+    "envoi": "2026-10-24T14:20:25Z"
   }
 ]
